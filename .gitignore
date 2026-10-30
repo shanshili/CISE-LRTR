@@ -1,0 +1,164 @@
+# Source code, documentation and curated docs/assets/ figures belong in Git.
+# Raw data, trained weights and generated experiments remain local.
+# Ignore rules do not remove files that Git already tracks; see the publishing guide.
+
+# Local assistant workspace and maintainer-only publishing notes/tools
+.codex/
+.agents/
+.local-work/
+/docs/GIT_PUBLISHING.md
+/scripts/check_publish.py
+/scripts/export_public_snapshot.py
+/项目结构与运行指南.md
+
+# Historical experiment notes; public setup instructions live in README.md
+/Module/baseline_README.md
+/Module/metrics_documentation.md
+/Module/网络维持率随机攻击实验_完整技术说明.md
+
+# Python environments, caches and build artifacts
+__pycache__/
+__pychche__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Editor and operating-system files; local credentials/configuration
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.env
+.env.*
+!.env.example
+
+# Raw/processed datasets and local reference downloads
+/dataset/
+/datasets/
+/data/
+/reference/
+
+# Arrays, serialized datasets and large binary data (at any depth)
+*.npy
+*.npz
+*.memmap
+*.mmap
+*.mat
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.hdf
+*.parquet
+*.arrow
+*.feather
+*.tif
+*.tiff
+
+# Trained models, checkpoints and weights (model source .py files stay tracked)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.keras
+*.pb
+*.tflite
+checkpoints/
+saved_models/
+weights/
+
+# Databases, journals and database exports must remain local
+*.db
+*.db-*
+*.db3
+*.db3-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.duckdb
+*.duckdb.wal
+*.mdb
+*.accdb
+*.sql
+*.dump
+*.rdb
+*.dbf
+*.mdf
+*.ndf
+*.ldf
+*.ibd
+*.bson
+*.bak
+database/
+databases/
+db/
+
+# Compressed copies of datasets/models/results
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.bz2
+*.xz
+
+# Generated graphs, representations, sweeps and experiment results
+/Combined_Results*/
+/Correlation_Graph/
+/mask_subgraph_visualization*/
+/visualization/
+/README.assets/
+/Module/baseline_README.assets/
+/Module/*_results*/
+/Module/*_result/
+/Module/evaluate_full/
+/Module/evaluate_under_Attack/
+/Module/outputs_importance*/
+/Module/PCMCI*/
+/Module/SCMI*/
+/Module/poi_eval*/
+/Module/Reference indicators/
+/Module/resilience_comparison_v5.png
+results/
+outputs/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+events.out.tfevents.*
+
+# Logs, crash dumps, runtime records and temporary working files
+*.log
+*.log.*
+*.dmp
+logs/
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+/*.out
+/*.err
+/*runtime*.txt
+/*Runtime*.txt
+/*运行时间*.txt
+
+/scripts/publication.gitignore
